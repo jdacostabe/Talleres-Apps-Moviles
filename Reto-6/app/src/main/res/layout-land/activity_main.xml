@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" >
+
+    <edu.harding.tictactoe.BoardView
+        android:id="@+id/board"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dp" />
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:id="@+id/information"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Turn information"
+        />
+
+    <RelativeLayout
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp">
+        <TextView
+            android:id="@+id/humanWonGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Human: "
+            android:textSize="20sp"
+        />
+
+        <TextView
+            android:id="@+id/computerWonGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:text="Android: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tiedGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="70dp"
+            android:text="Ties: "
+            android:textSize="20sp"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>
