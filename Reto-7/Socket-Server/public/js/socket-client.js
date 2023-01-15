@@ -12,7 +12,8 @@ const btnRes = document.querySelector('#btnRes');
 
 var lastToPlay = false;
 
-const socket = io("http://localhost:3000");
+const socket = io(); //By deafult, the Socket.io server exposes a client bundle with the io() function configured with the right Socket URL
+//const socket = io("http://localhost:3000");
 
 socket.on('connect', () => {
     lblOffline.style.display = "none";
